@@ -9,9 +9,12 @@ fn main() {
    io::stdin().read_line(&mut number1).expect("Erro ao ler number1");
    let mut number2 = String::new();
    io::stdin().read_line(&mut number2).expect("Erro ao ler number2");
-   if convert_to_int(30&number1) > convert_to_int(&number2){
-     println!("o numero {} é maior que {}",number1,number2);
-   }
-     println!("o numero {} é menor ou igual que {}",number1,number2);
+   if convert_to_int(&number1) > convert_to_int(&number2) {
+           println!("o numero {} é maior que {}",number1,number2);
+       }
+    else{
+      println!("o numero {} é menor ou igual que {}",number1,number2);
+}
+    
  
    }
