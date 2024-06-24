@@ -8,6 +8,12 @@ fn maior(a: i32, b: i32) -> i32{
     }else{
         return  b;
     }
+}; 
+
+fn alguma_fn(par_a: f32, par_b: i128) -> f32{
+    println!("essa função devolve um valor flutuante"); 
+   // 10.1 assim pode ser o retorno
+   10 as f32 // assim para retornar esse inteiro como fosse f32
 }
 fn main() {
    /* let mut a=15;
