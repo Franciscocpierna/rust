@@ -4,7 +4,7 @@
 
 
 
-fn count(num:  i32){
+fn count(num: i32){
         
     for num in 1..11{
         println!("O numero é {}",num);
