@@ -9,9 +9,7 @@ fn primo(numero: &i32)->bool{
  
  
  while x != 0 {
-    
-   
-   if *numero % x ==0{
+  if *numero % x ==0{
       divisao = divisao +1;    
    }
 
