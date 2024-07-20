@@ -42,8 +42,8 @@ fn verpermuta(primeira: &String, segunda: &String)->bool{
 
 
 fn main() {
-    let primeira = String::from ("abcdef");
-    let segunda = String::from ("fcaedb");
+    let primeira = String::from ("bec");
+    let segunda = String::from ("cbe");
     if verpermuta(&primeira,&segunda){
          println!("é permutação"); 
 
