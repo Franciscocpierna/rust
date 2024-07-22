@@ -18,6 +18,7 @@ fn verpermuta(primeira: &String, segunda: &String)->bool{
     }
     
     for i in 0..primeira.len() { 
+       
        if primeira.chars().nth(i)==Some(guarda) && segunda.chars().nth(i)==Some(guarda) {
             return false; // retornou o caracter em mesma  posição não indica permuta
             

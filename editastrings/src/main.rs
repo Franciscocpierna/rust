@@ -49,7 +49,6 @@ fn esta_a_um_passo(str1: &str, str2: &str) -> bool {
     edits <= 1
 }
 
-
 fn main() {
     let str1 = "pale";
     let str2 = "ple";
@@ -66,5 +65,4 @@ fn main() {
     let str7 = "pale";
     let str8 = "bibo";
     println!("As strings estão a um passo de distância: {}", esta_a_um_passo(str7, str8));
-
 }
