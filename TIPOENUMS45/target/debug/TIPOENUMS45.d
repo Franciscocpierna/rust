@@ -1,1 +1,1 @@
-C:\rust\TIPOENUMS45\target\debug\TIPOENUMS45.exe: C:\rust\TIPOENUMS45\src\main.rs
+C:\RUST\TIPOENUMS45\target\debug\TIPOENUMS45.exe: C:\RUST\TIPOENUMS45\src\main.rs
