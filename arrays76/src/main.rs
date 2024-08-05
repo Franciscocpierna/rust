@@ -1,5 +1,10 @@
 fn main(){
+    // let numeros=[2,1000] //preenche array com 2 mil vezes
     let numeros_inteiros: [i32; 5] = [1, 2, 3, 4, 5];
+    let  j = numeros_inteiros.len();
+    println!("{}numeros_inteiros[j]",numeros_inteiros[j-1]);
+    println!("{} tamanho do vetor = ", j);
+    println!("----------------------");
     for n in numeros_inteiros.iter(){
         println!("{}", n);
     }
