@@ -1,39 +1,54 @@
 fn rotacionar(k: usize, numeros: &mut [i32]) {
-   
-    let mut tam=numeros.len()-1;
     let mut i=0;
-    let mut pega=0;
-    let mut valork = k;
-    let mut valortam=tam;
-    numeros[tam]=pega;
-    println!(" em rotacionar {}",numeros[0]);
-    //for  (g,h) in t.chars().enumerate()
-    while tam>=0 && valork>0{
-        numeros[i]= numeros[tam]; //não esta
-        
-    
-       tam=tam-1; 
-       i=i+1;
+    let mut pega: Vec<i32>  = Vec::new();
+    let mut valork = k; 
+    let mut continua=0;
+   
+    for n in numeros.iter(){
+        pega.push(*n);
+        println!("{}", n);
     }
-  
+    numeros[k]=pega[numeros.len()-1];
+    for m in pega.iter(){
+        if valork < numeros.len()-1{
+          numeros[valork+1]=pega[i];
+          valork+=1;
+        }else{
+           if continua < k { 
+                numeros[continua]=pega[i];
+                continua+=1;
+            
+        }
+        }
+        
+        i+=1
 
+    }
+     
+    
+    
 }
- 
+
+
 
 
 
 fn main() {
     let mut numeros: [i32; 7] = [1, 2, 3, 4, 5, 6, 7];
     
-    let k=4;
-    numeros[0]=20;
+    let k=0;
+    if k > (numeros.len()-1) || numeros.len()==0{
+       println!("K tem que ser menor que vetor igual nem movimenta e não pode ser vazio")
+    }else{
    
-    println!("vetor origianal{:?}",numeros); 
+      println!("vetor origianal{:?}",numeros); 
        
-    rotacionar(k,&mut numeros);
+      rotacionar(k,&mut numeros);
     
     
-    println!("vetor retornado{:?}",numeros); 
+      println!("vetor retornado{:?}",numeros); 
+    } 
+     
      
 
     
