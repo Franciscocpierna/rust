@@ -17,7 +17,7 @@ fn main() {
     }
     
 }*/
-//#[derive(Debug)]
+//cd\#[derive(Debug)]
 /*enum Gender{
     Male, Female
 }
