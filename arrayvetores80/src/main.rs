@@ -1,3 +1,5 @@
+
+
 fn main() {
     //let mut numeros: [i32; 7] = [1, 2, 3, 4, 5, 6, 7];
     let mut vetores = vec![1,2,3,4];
